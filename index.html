@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Aksal Triansyah Damusti</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-container" >
+      <div class="nav-logo">
+        <img src="assets/img/smkn4.png" alt="SMKN 4 Bandung Logo" class="smkn-logo">
+        SMKN 4 Bandung
+      </div>
+
+      <!-- Hamburger Button -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="#projects"><i class="fas fa-code"></i> Project</a></li>
+        <li><a href="#certificates"><i class="fas fa-certificate"></i> Sertifikat</a></li>
+        <li><a href="#services"><i class="fas fa-envelope"></i> Services</a></li>
+      </ul>
+
+      <!-- Dark Mode Toggle -->
+      <button id="darkModeToggle" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="home" class="section section-hero">
+    <div class="container hero-content">
+      <div class="hero-image-wrapper">
+        <img src="assets/img/home-perfil.png" alt="Aksal Profile Picture" class="hero-img" />
+      </div>
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="highlight">Aksal Triansyah Damusti</span></h1>
+        <p>Software Developer & Student passionate about modern web & app development.</p>
+        <a href="assets/pdf/CV Akzal Triansyah Damusti PKL TP 20252026.pdf" class="btn-primary" download>
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Postman Forge</h3>
+          <img src="assets/img/project1.png" alt="postman">
+          <p>API Testing and Management Toolkit using Postman for Efficient and Structured Request Handling.</p>
+        </div>
+        <div class="card">
+          <h3>Supabase Data Hub</h3>
+          <img src="assets/img/project2.png" alt="Supabase">
+          <p>Mobile Data Management App with Supabase Integration on Native Android.</p>
+        </div>
+        <div class="card">
+          <h3>Enterprise Sales Manager</h3>
+          <img src="assets/img/project3.png" alt="seles">
+          <p>Desktop Application Development using Java Swing and MySQL.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES SECTION -->
+  <section id="certificates" class="section">
+    <div class="container">
+      <h2 class="section-title">Sertifikat</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Orecle Academy</h3>
+          <img src="assets/img/sertifikat1.png" alt="sertifikat1" class="s1">
+          <p>Belajar Dasar Datebase Foundations</p>
+        </div>
+        <div class="card">
+          <h3>Generative AI for Student <br>by: Microsoft</h3>
+          <img src="assets/img/sertifikat2.png" alt="sertifikat2" class="s2">
+          <p>Belajar Mengenai Dasar Teknologi AI Generatif</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <p>Kirim pesan langsung ke email saya lewat form di bawah ini:</p>
+      <form id="contactForm" class="form-contact" action="https://formspree.io/f/mldbvabw" method="POST">
+        <input type="text" name="name" placeholder="Nama lengkap" required />
+        <input type="email" name="email" placeholder="Email kamu" required />
+        <textarea name="message" placeholder="Pesan" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <p>© 2025 Aksal Triansyah Damusti</p>
+      <div class="social-icons">
+        <a href="https://github.com/SallxAksal" target="_blank" aria-label="Github"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/akzal-triansyah-damusti-6b1204367/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:triansyahaksal@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
